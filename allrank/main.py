@@ -1,19 +1,19 @@
 from urllib.parse import urlparse
 
-import allrank.models.losses as losses
+import models.losses as losses
 import numpy as np
 import os
 import torch
-from allrank.config import Config
-from allrank.data.dataset_loading import load_libsvm_dataset, create_data_loaders
-from allrank.models.model import make_model
-from allrank.models.model_utils import get_torch_device, CustomDataParallel
-from allrank.training.train_utils import fit
-from allrank.utils.command_executor import execute_command
-from allrank.utils.experiments import dump_experiment_result, assert_expected_metrics
-from allrank.utils.file_utils import create_output_dirs, PathsContainer, copy_local_to_gs
-from allrank.utils.ltr_logging import init_logger
-from allrank.utils.python_utils import dummy_context_mgr
+from config import Config
+from data.dataset_loading import load_libsvm_dataset, create_data_loaders
+from models.model import make_model
+from models.model_utils import get_torch_device, CustomDataParallel
+from training.train_utils import fit
+from utils.command_executor import execute_command
+from utils.experiments import dump_experiment_result, assert_expected_metrics
+from utils.file_utils import create_output_dirs, PathsContainer, copy_local_to_gs
+from utils.ltr_logging import init_logger
+from utils.python_utils import dummy_context_mgr
 from argparse import ArgumentParser, Namespace
 from attr import asdict
 from functools import partial

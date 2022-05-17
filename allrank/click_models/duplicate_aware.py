@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from scipy.spatial.distance import cdist
 
-from allrank.click_models.base import ClickModel
+from click_models.base import ClickModel
 
 
 class EverythingButDuplicatesClickModel(ClickModel):

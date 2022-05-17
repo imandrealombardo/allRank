@@ -3,12 +3,12 @@ from typing import Tuple, Dict, List, Generator
 import torch
 from torch.utils.data.dataloader import DataLoader
 
-import allrank.models.losses as losses
-from allrank.config import Config
-from allrank.data.dataset_loading import LibSVMDataset
-from allrank.models.metrics import ndcg, dcg
-from allrank.models.model import LTRModel
-from allrank.models.model_utils import get_torch_device
+import models.losses as losses
+from config import Config
+from data.dataset_loading import LibSVMDataset
+from models.metrics import ndcg, dcg
+from models.model import LTRModel
+from models.model_utils import get_torch_device
 
 
 def rank_slates(datasets: Dict[str, LibSVMDataset], model: LTRModel, config: Config) \

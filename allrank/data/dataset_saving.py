@@ -3,7 +3,7 @@ from typing import Iterable
 import numpy as np
 from sklearn.datasets import dump_svmlight_file
 
-from allrank.data.dataset_loading import PADDED_Y_VALUE
+from data.dataset_loading import PADDED_Y_VALUE
 
 
 def write_to_libsvm_without_masked(path: str, X: Iterable[np.ndarray], y: Iterable[np.ndarray]) -> None:

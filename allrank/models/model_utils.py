@@ -4,8 +4,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from allrank.utils.file_utils import is_gs_path, copy_file_to_local
-from allrank.utils.ltr_logging import get_logger
+from utils.file_utils import is_gs_path, copy_file_to_local
+from utils.ltr_logging import get_logger
 
 logger = get_logger()
 

@@ -5,12 +5,12 @@ import numpy as np
 import torch
 from torch.nn.utils import clip_grad_norm_
 
-import allrank.models.metrics as metrics_module
-from allrank.data.dataset_loading import PADDED_Y_VALUE
-from allrank.models.model_utils import get_num_params, log_num_params
-from allrank.training.early_stop import EarlyStop
-from allrank.utils.ltr_logging import get_logger
-from allrank.utils.tensorboard_utils import TensorboardSummaryWriter
+import models.metrics as metrics_module
+from data.dataset_loading import PADDED_Y_VALUE
+from models.model_utils import get_num_params, log_num_params
+from training.early_stop import EarlyStop
+from utils.ltr_logging import get_logger
+from utils.tensorboard_utils import TensorboardSummaryWriter
 
 logger = get_logger()
 

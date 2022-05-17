@@ -1,8 +1,8 @@
 import torch
 from torch.nn import BCELoss
 
-from allrank.data.dataset_loading import PADDED_Y_VALUE
-from allrank.models.model_utils import get_torch_device
+from data.dataset_loading import PADDED_Y_VALUE
+from models.model_utils import get_torch_device
 
 
 def bce(y_pred, y_true, padded_value_indicator=PADDED_Y_VALUE):

@@ -9,7 +9,7 @@ from typing import Optional
 import torch
 import torch.nn as nn
 
-from allrank.config import PositionalEncoding
+from config import PositionalEncoding
 
 
 class FixedPositionalEncoding(nn.Module):

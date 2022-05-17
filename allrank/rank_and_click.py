@@ -8,19 +8,19 @@ import pandas as pd
 import torch
 from attr import asdict
 
-from allrank.click_models.click_utils import click_on_slates
-from allrank.config import Config
-from allrank.data.dataset_loading import load_libsvm_dataset_role
-from allrank.data.dataset_saving import write_to_libsvm_without_masked
-from allrank.inference.inference_utils import rank_slates, metrics_on_clicked_slates
-from allrank.models.model import make_model
-from allrank.models.model_utils import get_torch_device, CustomDataParallel, load_state_dict_from_file
-from allrank.utils.args_utils import split_as_strings
-from allrank.utils.command_executor import execute_command
-from allrank.utils.config_utils import instantiate_from_recursive_name_args
-from allrank.utils.file_utils import create_output_dirs, PathsContainer, copy_local_to_gs
-from allrank.utils.ltr_logging import init_logger
-from allrank.utils.python_utils import all_equal
+from click_models.click_utils import click_on_slates
+from config import Config
+from data.dataset_loading import load_libsvm_dataset_role
+from data.dataset_saving import write_to_libsvm_without_masked
+from inference.inference_utils import rank_slates, metrics_on_clicked_slates
+from models.model import make_model
+from models.model_utils import get_torch_device, CustomDataParallel, load_state_dict_from_file
+from utils.args_utils import split_as_strings
+from utils.command_executor import execute_command
+from utils.config_utils import instantiate_from_recursive_name_args
+from utils.file_utils import create_output_dirs, PathsContainer, copy_local_to_gs
+from utils.ltr_logging import init_logger
+from utils.python_utils import all_equal
 
 
 def parse_args() -> Namespace:

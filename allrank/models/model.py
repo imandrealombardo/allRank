@@ -1,8 +1,8 @@
 import torch.nn as nn
 from attr import asdict
 
-from allrank.models.transformer import make_transformer
-from allrank.utils.python_utils import instantiate_class
+from models.transformer import make_transformer
+from utils.python_utils import instantiate_class
 
 
 def first_arg_id(x, *y):

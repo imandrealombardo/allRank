@@ -1,6 +1,6 @@
 import torch
 
-from allrank.data.dataset_loading import PADDED_Y_VALUE
+from data.dataset_loading import PADDED_Y_VALUE
 
 
 def pointwise_rmse(y_pred, y_true, no_of_levels, padded_value_indicator=PADDED_Y_VALUE):

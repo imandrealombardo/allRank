@@ -1,7 +1,7 @@
 import importlib
 from typing import Any
 
-from allrank.config import NameArgsConfig
+from config import NameArgsConfig
 
 
 def instantiate_from_recursive_name_args(name_args: NameArgsConfig):
